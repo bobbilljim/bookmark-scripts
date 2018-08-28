@@ -10,3 +10,8 @@ javascript: (function () {
         }
     })()
 })()
+
+
+//uglified - make sure to have javascript label on front 
+
+javascript:(function(){(function(){var t,o;var e=document.querySelectorAll("body *");for(t=0;t<e.length;t++){o=getComputedStyle(e[t]).position;if(o==="fixed"||o==="sticky"){e[t].parentNode.removeChild(e[t])}}})()})();
