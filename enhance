@@ -1,0 +1,16 @@
+javascript: ! function() {
+        var t, o;
+        var e = document.querySelectorAll('body *');
+        for (t = 0; t < e.length; t++) {
+            o = getComputedStyle(e[t]);
+            if (o['-webkit-filter']) {
+                e[t].style['-webkit-filter:'] = 'none';
+            }
+            if (o['filter']) {
+                e[t].style['filter'] = 'none';
+            }
+        }
+    }();
+    
+//minified
+javascript:!function(){var e,t,l=document.querySelectorAll("body *");for(e=0;e<l.length;e++)(t=getComputedStyle(l[e]))["-webkit-filter"]&&(l[e].style["-webkit-filter:"]="none"),t.filter&&(l[e].style.filter="none")}();
